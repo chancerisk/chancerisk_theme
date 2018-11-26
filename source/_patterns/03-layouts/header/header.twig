@@ -1,0 +1,41 @@
+<header class="header__container">
+    <div class="header">
+        <div class="header__top grid-container full-large-down">
+            <div class="header__background filler filler--white"></div>
+            <div class="header__top__inner">
+
+            {% include "@components/burger/burger.twig" with {"id": "responsive-menu"} %}
+
+            <div class="header__logo-container">
+                <div class="header__logo-filler"></div>
+                <div class="header__logo">
+                    <a href="{{ path('<front>') }}">
+                        {% embed "@base/round-icon/round-icon.twig" with {"modifier": "large"} %}
+                            {% block icon %}
+                                {% include "@base/icons/icon.twig" with {"icon": "logo-" ~ schaer_brand ,"modifier": "logo-" ~ schaer_brand} %}
+                            {% endblock icon %}
+                        {% endembed %}
+                    </a>
+                </div>
+            </div>
+            <div class="header__menu" id="responsive-menu">
+                {% block primary_menu %}
+                    {{ primary_menu }}
+                {% endblock %}
+            </div>
+                {{ search_flyout }}
+
+            {#<a class="is-featured" href="#">
+                <span class="show-for-large">{% include "@base/icons/icon.twig" with {"icon": 'fachartikel_white'} %}</span> Fachartikel
+            </a>#}
+            </div>
+        </div>
+    </div>
+    <div class="header__submenu">
+        <div class="header__submenu__inner_wrapper grid-container">
+            <div class="header__submenu__button"></div>
+            {{ submenu_button }}
+        </div>
+    </div>
+</header>
+<div class="header__spacer"></div>

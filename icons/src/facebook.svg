@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>kanso/icons/social/facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website-V03" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons-kanso-&amp;-flavis" transform="translate(-848.000000, -271.000000)" fill="#373E46" fill-rule="nonzero">
+            <g id="social-facebook" transform="translate(848.000000, 271.000000)">
+                <path d="M20.6826479,30 L11.1038467,30 C10.4940304,30 10,29.5056633 10,28.8960846 L10,11.1038379 C10,10.4941042 10.4941079,10 11.1038467,10 L28.8962312,10 C29.5058146,10 30,10.4941042 30,11.1038379 L30,28.8960846 C30,29.5057408 29.5057371,30 28.8962312,30 L23.7997104,30 L23.7997104,22.2548979 L26.3993837,22.2548979 L26.7886479,19.2364942 L23.7997104,19.2364942 L23.7997104,17.3094338 C23.7997104,16.4355363 24.04238,15.8400042 25.2955375,15.8400042 L26.8938796,15.8393054 L26.8938796,13.1396212 C26.6174525,13.1028367 25.66866,13.0206542 24.5648133,13.0206542 C22.2603475,13.0206542 20.6826479,14.4273025 20.6826479,17.0105037 L20.6826479,19.2364942 L18.0763008,19.2364942 L18.0763008,22.2548979 L20.6826479,22.2548979 L20.6826479,30 Z" id="Facebook"></path>
+            </g>
+        </g>
+    </g>
+</svg>

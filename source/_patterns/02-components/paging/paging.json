@@ -1,0 +1,29 @@
+{
+  "attributes": {
+    "Attribute()": {}
+  },
+  "back": "zurück",
+  "next": "weiter",
+  "items": [
+    {
+      "title": "2",
+      "url": "#",
+      "content": "page 2"
+    },
+    {
+      "title": "3",
+      "url": "#",
+      "content": "page 3"
+    },
+    {
+      "title": "4",
+      "url": "#",
+      "content": "page 4"
+    },
+    {
+      "title": "5",
+      "url": "#",
+      "content": "page 5"
+    }
+  ]
+}

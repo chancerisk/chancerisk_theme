@@ -1,0 +1,5 @@
+{% set tag_name = link_url != '' ? 'a' : 'div' %}
+<{{ tag_name }} class="more-link {{ more_link_class }} {{ modifier_class('more-link', modifier) }} {{ attributes.class }}" {%  if link_url != '' %} href="{{ link_url }}" {% endif%}>
+    {{ "Read more"|t }}
+    <span class="more-link__arrow">{% include "@base/icons/icon.twig" with {"icon": "arrow" } %}</span>
+</{{ tag_name }}>

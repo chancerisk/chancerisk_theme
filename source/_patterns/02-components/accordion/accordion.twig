@@ -1,0 +1,13 @@
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+    <li class="accordion-item is-active content-padding" data-accordion-item>
+        <a class="accordion-title accordion__title">
+            {{ title }}
+            <div class="accordion__title__arrow">{% include "@base/icons/icon.twig" with {"icon":  "open-dropdown"} %}</div>
+        </a>
+        <div class="accordion-content" data-tab-content>
+            {% block items %}
+                {{ items }}
+            {% endblock %}
+        </div>
+    </li>
+</ul>

@@ -1,0 +1,8 @@
+<div class="corner-icon {{ modifier_class('corner-icon', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
+    <div class="corner-icon__content">
+        {% block icon %}
+        {% include "@base/icons/icon.twig" with {"icon": "m-" ~ icon|render|striptags|trim}%}
+        {% endblock%}
+    </div>
+</div>
+

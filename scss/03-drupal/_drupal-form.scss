@@ -1,0 +1,43 @@
+.webform-composite-hidden-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  legend {
+    margin-bottom: 0;
+  }
+}
+
+#edit-submit-search {
+  display: none;
+}
+
+.infinite_scroll_pager {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.js-form-type-select {
+  margin-top: rem-calc(30px);
+}
+
+.form-item {
+  &--error-message {
+    font-size: rem-calc(12px);
+    color: red;
+  }
+}
+
+.newsletter-form {
+  .webform-flexbox {
+    @media (max-width: 787px) {
+      margin-bottom: rem-calc(60px);
+    }
+  }
+  @media (max-width: 787px) {
+    margin-bottom: rem-calc(30px);
+    input[data-drupal-selector="edit-actions-wizard-next"] {
+      width: 100%;
+    }
+  }
+}

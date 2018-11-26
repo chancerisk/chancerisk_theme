@@ -1,0 +1,602 @@
+recipe:
+  label: Recipe
+  description: A three column pattern
+  use: "@templates/recipes/recipes.twig"
+  fields:
+    image:
+      type: text
+      label: Image
+    breadcrumb:
+      type: text
+      label: Breadcrumb
+    title:
+      type: text
+      label: Title
+    tags:
+      type: text
+      label: Tags
+    preparation_sub_title:
+      type: text
+      label: Preparation sub title
+    preparation:
+      type: text
+      label: Preparation
+    nutritions:
+      type: text
+      label: Nutritions
+    pdf_recipes:
+      type: text
+      label: Pdf recipe
+    social_media:
+      type: text
+      label: Social media
+    ingredients:
+      type: text
+      label: Ingredients
+    product_type:
+      type: text
+      label: Product type
+    similar_recipes:
+      type: text
+      label: Similar recipes
+
+lined_list:
+  label: Lined list
+  use: "@components/lined-list/lined-list.twig"
+  fields:
+    text:
+      type: text
+      label: Text
+
+b_label:
+  label: B-label
+  use: "@base/b-label/b-label.twig"
+  fields:
+    text:
+      type: text
+      label: Text
+  settings:
+    modifier:
+      type: textfield
+      label: Modifier
+    class:
+      type: textfield
+      label: Class
+    tag_color:
+      type: token
+      label: Tag color
+    link_url:
+      type: token
+      label: Link url
+
+simple_cards:
+  label: Simple cards
+  use: '@components/simple-cards/simple-cards.twig'
+  fields:
+    image:
+      type: image
+      label: image
+    icon:
+      type: text
+      label: Icon
+    title:
+      type: text
+      label: Title
+    content:
+      type: text
+      label: content
+    tags:
+      type: text
+      label: Tags
+  settings:
+    class:
+      type: textfield
+      label: Class
+    modifier:
+      type: textfield
+      label: Modifier
+    link:
+      type: token
+      label: Link
+    has_more_link:
+      type: boolean
+      label: More link
+
+download:
+  label: Download
+  use: '@components/download/download.twig'
+  fields:
+    text:
+      type: text
+      label: Text
+    size:
+      type: text
+      label: Size
+  settings:
+    url:
+      type: token
+      label: Url
+
+special_notice:
+  label: Special notice
+  use: '@components/special-notice/special-notice.twig'
+  fields:
+    text:
+      type: text
+      label: Text
+
+product:
+  label: product
+  description: A three column pattern
+  use: "@templates/product/product.twig"
+  fields:
+    breadcrumb:
+      type: text
+      label: Breadcrumbª
+    title:
+      type: text
+      label: Title
+    product_categories:
+      type: text
+      label: Product categories
+    image:
+      type: image
+      label: Image
+    download:
+      type: text
+      label: Download
+    social_media:
+      type: text
+      label: Social media
+    sub_title:
+      type: text
+      label: Sub title
+    list_icon:
+      type: text
+      label: list icon
+    product_text:
+      type: text
+      label: Produc text
+    order_information:
+      type: text
+      label: Order information
+    link:
+      type: text
+      label: Link
+    similar_product:
+       type: card
+       label: Similar product
+    recipes_used:
+      type: card
+      label: Recipes used
+
+article:
+  label: article
+  description: A three column pattern
+  use: "@templates/article/article.twig"
+  fields:
+    image:
+      type: image
+      label: Image
+    breadcrumb:
+      type: text
+      label: Breadcrumb
+    title:
+      type: text
+      label: Title
+    tags:
+      type: text
+      label: Tags
+    sub_title:
+      type: text
+      label: Sub title
+    content:
+      type: text
+      label: Content
+    social_media:
+      type: text
+      label: Social media
+    more_articles:
+      type: card
+      label: More articles
+    used_products:
+      type: card
+      label: Used products
+
+introduction:
+  label: Introduction
+  use: '@components/introduction/introduction.twig'
+  fields:
+    header:
+      type: text
+      label: Header
+    text:
+      type: text
+      label: Text
+
+stage:
+  label: Stage
+  use: '@components/stage/stage.twig'
+  fields:
+    items:
+      type: text
+      label: Items
+    stage_circle:
+      type: text
+      label: Stage circle
+  libraries:
+    - stage:
+        js:
+          js/stage.js: {}
+        dependencies:
+          - schaer_brands/slick
+
+colored_card:
+  label: Colored card
+  use: '@components/colored-card/colored-card.twig'
+  fields:
+    image:
+      type: image
+      label: Image
+    title:
+      type: text
+      label: Title
+    text:
+      type: text
+      label: Text
+  settings:
+    modifier:
+      type: token
+      label: modifier
+    link:
+      type: token
+      label: Link
+
+feature_content:
+  label: Feature content
+  use: '@layouts/feature-content/feature-content.twig'
+  fields:
+    featured_article:
+      type: text
+      label: Featured articles
+    list_articles:
+      type: text
+      label: List articles
+
+two_col_card:
+  label: Two col card
+  use: '@components/two-col-card/two-col-card.twig'
+  fields:
+    title:
+      type: text
+      label: Title
+    image:
+      type: text
+      label: Image
+  settings:
+    link:
+      type: token
+      label: Link
+
+quote:
+  label: Quote
+  use: '@components/quote/quote.twig'
+  fields:
+    mark:
+      type: text
+      label: Mark
+    text:
+      type: text
+      label: Text
+    author:
+      type: Author
+      label: Author
+
+author:
+  label: Author
+  use: '@components/author/author.twig'
+  fields:
+    image:
+      type: text
+      label: Image
+    name:
+      type: text
+      label: Name
+
+grid_slider:
+  label: Grid slider
+  use: '@layouts/grid-slider/grid-slider.twig'
+  fields:
+    items:
+      type: text
+      label: Items
+  settings:
+    slider_id:
+      type: textfield
+      label: Slider id
+  libraries:
+    - grid_slider:
+        js:
+          js/1-grid-slider.js: {}
+        dependencies:
+          - schaer_brands/slick
+
+gallery:
+  label: Gallery slider (article page)
+  use: '@layouts/grid-slider/grid-slider.twig'
+  fields:
+    items:
+      type: text
+      label: Items
+  settings:
+    slider_id:
+      type: textfield
+      label: Slider id
+    link:
+      type: textfield
+      label: Link
+  libraries:
+    - grid_slider:
+        js:
+          js/1-grid-slider.js: {}
+          js/2-gallery.js: {}
+        dependencies:
+          - schaer_brands/slick
+          - schaer_brands/fancybox
+
+text_image:
+  label: Text image
+  use: '@components/text-image/text-image.twig'
+  fields:
+    headline:
+      type: text
+      label: Headline
+    sub_headline:
+      type: text
+      label: Sub headline
+    text:
+      type: text
+      label: Text
+    image:
+      type: image
+      label: Image
+    second_text:
+      type: text
+      label: Second text
+
+content_table:
+  label: Content table
+  use: '@components/content-table/content-table.twig'
+  fields:
+    text:
+      type: text
+      label: Text
+
+section:
+  label: Section
+  use: '@components/section/section.twig'
+  fields:
+    title:
+      type: text
+      label: Title
+    sub_title:
+      type: text
+      label: Sub title
+    text:
+      type: text
+      label: text
+    content:
+      type: text
+      label: Content
+    button:
+      type: button
+      label: Button
+  settings:
+    use_container:
+      type: boolean
+      label: Use grid container
+    color:
+      type: textfield
+      label: Color
+    modifier:
+      type: textfield
+      label: Modifier
+button:
+  label: Button
+  use: '@base/button/button.twig'
+  fields:
+    url:
+      type: link
+      label: Url
+    text:
+      type: text
+      label: Text
+  settings:
+    icon:
+      type: textfield
+      label: Icon
+    icon_modifier:
+      type: textfield
+      label: Icon modifier
+    color:
+      type: textfield
+      label: Color
+
+link:
+  label: Link
+  use: '@components/link/link.twig'
+  fields:
+    link:
+      type: text
+      label: Link
+  settings:
+    modifier:
+      type: token
+      label: Modifier
+    link_prefix:
+      type: textfield
+      label: Link prefix
+    url:
+      type: token
+      label: Url
+
+two_col_2_1:
+  label: Two col 2 1
+  use: '@layouts/two-col-2-1/two-col-2-1.twig'
+  fields:
+    left:
+      type: text
+      label: Left
+    right:
+      type: text
+      label: Right
+
+recipe_search:
+  label: Recipe search
+  use: '@templates/recipe-search/recipe-search.twig'
+  fields:
+    title:
+      type: text
+      label: Title
+    sub_title:
+      type: text
+      label: Sub title
+    content:
+      type: text
+      label: Content
+    large_categories:
+      type: text
+      label: Large categories
+    categories_facets:
+      type: text
+      label: Categories facets
+    used_products:
+      type: text
+      label: Used products
+  settings:
+    modifier:
+      type: textfield
+      label: Modifier
+
+colored_box:
+  label: Colored box
+  use: "@components/colored-box/colored-box.twig"
+  fields:
+    text:
+      type: text
+      label: Text
+  settings:
+    colored_box_modifier:
+      type: token
+      label: Colored box modifier
+    classes:
+      type: textfield
+      label: Classes
+    round_icon_classes:
+      type: token
+      label: Round icon classes
+
+large_card:
+  label: Large card
+  use: "@components/large-card/large-card.twig"
+  fields:
+    headline:
+      type: text
+      label: Headline
+    image:
+      type: image
+      label: Image
+  settings:
+    link_url:
+      type: token
+      label: Link url
+
+corner_icon:
+  label: Corner icon
+  use: "@base/corner-icon/corner-icon.twig"
+  fields:
+    icon:
+      type: text
+      label: Icon
+  settings:
+    modifier:
+      type: token
+      label: Modifier
+
+wrapper:
+  label: Wrapper
+  use: "@layouts/wrapper/wrapper.twig"
+  fields:
+    content:
+      type: text
+      label: Content
+  settings:
+    modifier:
+      type: textfield
+      label: Modifier
+
+order_information:
+  label: Order information
+  use: "@components/order-information/order-information.twig"
+  fields:
+    text:
+      type: text
+      label: Text
+
+tags:
+  label: Tags
+  use: '@templates/tags/tags.twig'
+  fields:
+    tag_name:
+      type: text
+      label: Tag name
+    filters:
+      type: text
+      label: Filters
+    results:
+      type: text
+      label: Results
+
+fancy_image:
+  label: Fancy image
+  use: '@components/fancy-image/fancy-image.twig'
+  fields:
+    image:
+      type: image
+      label: Image
+  settings:
+      large_url:
+        type: token
+        label: Large url
+      image_id:
+        type: token
+        label: Image id
+  libraries:
+      - fancy_image:
+          js:
+            js/fancy-image.js: {}
+          dependencies:
+            - schaer_brands/fancybox
+
+basic:
+  label: Basic Article
+  use: '@templates/basic/basic.twig'
+  fields:
+    title:
+      type: text
+      label: Title
+    content:
+      type: text
+      label: Content
+
+callout:
+  label: Callout
+  use: '@components/callout/callout.twig'
+  fields:
+    text:
+      type: text
+      label: Text
+  settings:
+    classes:
+      type: textfield
+      label: Classes

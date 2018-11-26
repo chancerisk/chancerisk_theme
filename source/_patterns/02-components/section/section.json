@@ -1,0 +1,21 @@
+{
+  "attributes": {
+    "Attribute()": {}
+  },
+  "spacer_class": "vertical-spacer",
+  "title": "Try similar recipes",
+  "sub_title": "",
+  "text": "",
+  "content": {
+    "include()": {
+      "pattern": "layouts-grid-simple-cards",
+      "with": {
+        "count": "three"
+      }
+    }
+  },
+  "color": "secondary",
+  "button": "",
+  "modifier": "large-top"
+
+}

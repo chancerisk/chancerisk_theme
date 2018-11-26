@@ -1,0 +1,13 @@
+{% set tag_name = url != '' ? 'a': 'button'%}
+
+{% set attributes = attributes == null ? attributes_object() : attributes %}
+{% if (url != '')  %}
+    {% set attributes = attributes.setAttribute('href', url) %}
+{% endif %}
+
+<{{ tag_name }} class="button {{ class }} {{ color }} {{ modifier_class('button', modifier) }} {{ attributes.class }}" {{ attributes|without('class') }}>
+    {% if icon %}
+        {% include '@base/icons/icon.twig'  with {"icon": icon, "modifier": icon_modifier}%}
+    {% endif %}
+   {{ text }}
+</{{ tag_name }}>

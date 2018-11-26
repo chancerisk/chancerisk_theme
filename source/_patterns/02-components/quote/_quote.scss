@@ -1,0 +1,32 @@
+.quote {
+  position: relative;
+  background-color: $white;
+  margin-bottom: 76px;
+
+  @include breakpoint(large) {
+    margin-bottom: 88px;
+  }
+
+  &__symbol {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    transform: rotate(180deg);
+  }
+
+  &__author {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 60%);
+    left: 50%;
+  }
+
+  &__text {
+    text-align: center;
+    padding: $global-padding;
+    margin-bottom: 60px;
+    height: 200px;
+  }
+
+}

@@ -1,0 +1,19 @@
+{
+  "attributes": {
+    "Attribute()": {}
+  },
+  "items": [
+    {
+      "title": "Unternehmen",
+      "link": "#"
+    },
+    {
+      "title": "Job",
+      "link": "#"
+    },
+    {
+      "title": "Presse",
+      "link": "#"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{%- set content_value -%}
+    {{- content -}}
+{% endset %}
+{%- set text_value -%}
+    {{- text -}}
+{% endset %}
+{% if content_value != '' %}
+    {% if use_container == true %}
+    <div class="grid-container">
+    {% endif %}
+        <section class="section {{ modifier_class('section', modifier) }}  {{ attributes.class }}"{{ attributes|without('class') }}>
+            <div class="section__title cell {{ modifier_class('section__title', color) }} small-12">
+                {% block title %}
+                    {{ title }}
+                {% endblock %}
+            </div>
+            <div class="section__sub-title cell small-12">{{ sub_title }}</div>
+            {% if text_value %}
+                <div class="section__text cell small-12">{{ text_value }}</div>
+            {% endif %}
+            <div class="section__content cell small-12">{{ content_value }}</div>
+            <div class="section__button cell small-12">
+                {{ button }}
+            </div>
+        </section>
+    {% if use_container == true %}
+    </div>
+    {% endif %}
+{% endif %}

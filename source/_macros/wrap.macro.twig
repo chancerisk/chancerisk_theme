@@ -1,0 +1,14 @@
+{% macro wrap(content, tag, class) %}
+  {%- set content_value -%}
+    {{- content -}}
+  {% endset %}
+
+  {% set content_output %}
+    {% if content_value is not empty and content_value != 'empty'%}
+      <{{ tag }} class="{{ class }}">
+      {{- content_value -}}
+      </{{ tag }}>
+    {% endif %}
+  {% endset %}
+  {{ content_output }}
+{% endmacro %}

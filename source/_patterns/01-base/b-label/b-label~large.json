@@ -1,0 +1,9 @@
+{
+  "attributes": {
+    "Attribute()": {}
+  },
+  "color": "primary",
+  "text": "Zutaten",
+  "class": "negative-margin",
+  "modifier": "large"
+}

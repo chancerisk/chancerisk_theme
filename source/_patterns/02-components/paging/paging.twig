@@ -1,0 +1,36 @@
+{% if items %}
+    <nav aria-label="Pagination paging" style="width: 100%">
+        <ul class="pagination paging__list">
+            {% if prev %}
+                <li class="pagination-previous"><a href="{{ prev.href }}" aria-label="Previous page">{{ 'previous'|t }}</a></li>
+            {% else %}
+                <li class="pagination-previous disabled">{{ 'previous'|t }}</li>
+            {% endif %}
+            {# Add an ellipsis if there are further previous pages. #}
+            {% if ellipses.previous %}
+                <li>
+                    <a href="{{ items['0'].href }}" aria-label="1">1</a>
+                </li>
+                <li class="ellipsis" aria-hidden="true"></li>
+            {% endif %}
+            {% for key, item in items %}
+                <li>
+                    <a class="{{ current == key ? ' current paging__current' : '' }}" href="{{ item.href }}" aria-label="{{ key }}">{{ key }}</a>
+                </li>
+            {% endfor %}
+            {# Add an ellipsis if there are further next pages. #}
+            {% if ellipses.next %}
+              <li class="ellipsis" aria-hidden="true"></li>
+              <li>
+                <a href="{{ last.href }}" aria-label="{{ last.page_number }}">{{ last.page_number }}</a>
+              </li>
+            {% endif %}
+            {% if next %}
+                <li class="pagination-next paging__dotes"><a href="{{ next.href }}" aria-label="Next page">{{ 'next'|t }}</a></li>
+            {% else %}
+                <li class="pagination-next paging__dotes disabled">{{ 'next'|t }}</li>
+            {% endif %}
+
+        </ul>
+    </nav>
+{% endif %}

@@ -1,0 +1,39 @@
+{
+  "attributes": {
+    "Attribute()": {}
+  },
+  "content" : {
+    "join()" : [
+      "components-stage",
+      "components-introduction",
+      {
+        "include()": {
+          "pattern": "layouts-grid-slider",
+          "with": {
+            "dots_modifier": "bottom-under"
+          }
+        }
+      },
+      "components-newsletter",
+      "layouts-feature-content",
+      {
+        "include()": {
+          "pattern": "layouts-grid-slider",
+          "with": {
+            "slider_id": "quote",
+            "dots_modifier": "bottom",
+            "items": {
+              "join()": [
+                "components-quote",
+                "components-quote",
+                "components-quote",
+                "components-quote"
+              ]
+            }
+          }
+        }
+      },
+      "layouts-footer"
+    ]
+  }
+}

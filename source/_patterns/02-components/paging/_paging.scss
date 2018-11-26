@@ -1,0 +1,14 @@
+.paging {
+  @include vertical-spacer($vertical-large);
+
+  &__list {
+    text-align: center;
+    @include vertical-spacer($vertical-large);
+  }
+
+  &__current.current {
+    &:hover {
+      background: $dark-gray;
+    }
+  }
+}

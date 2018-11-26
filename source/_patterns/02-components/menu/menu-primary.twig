@@ -1,0 +1,39 @@
+<nav role="navigation">
+  <ul class="menu-primary menu vertical large-horizontal icons {{ modifier_class('menu', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
+    <li class="menu-primary__spacer"></li>
+    {% for item in items %}
+      <li class="menu-primary__item {{ item.attributes.class }}">
+        <a class="align-middle {% if (item.in_active_trail) %}is-active{% endif %}" href="{{ item.url }}">
+          {% set icon = item.icon%}
+          {% if icon is not empty %}
+            {% embed  "@base/round-icon/round-icon.twig" with {"modifier": "small white-transparent"} %}
+              {% block icon %}
+                {% include "@base/icons/icon.twig" with {"icon":  icon, "modifier": "menu" } %}
+              {% endblock icon %}
+            {% endembed %}
+          {% endif %}
+          <p class="menu-primary__title" lang="de">
+            {{ menu_replace(item.title) }}
+          </p>
+          {% if item.below is not empty %}
+          <div class="menu-primary__dropdown-icon">
+              {% include "@base/icons/icon.twig" with {"icon":  "open-dropdown"} %}
+          </div>
+          {% endif %}
+        </a>
+        {% if item.below is not empty %}
+
+          <ul class="menu-container menu-container__spacer menu vertical large-horizontal nested {% if (item.in_active_trail) %}is-active{% endif %}">
+            {% for subitem in item.below %}
+              <li>
+                <a class="{% if (subitem.in_active_trail ) %}is-active{% endif %}" href="{{ subitem.url }}">
+                  {{ subitem.title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

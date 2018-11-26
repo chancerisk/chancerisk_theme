@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="18px" viewBox="0 0 30 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>kanso/icons/arrow-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website-V03" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="icons-kanso-&amp;-flavis" transform="translate(-1182.000000, -489.000000)"  stroke-width="2">
+            <g id="ic_arrow_white" transform="translate(1182.000000, 489.000000)">
+                <g id="arrow" transform="translate(1.000000, 1.000000)">
+                    <path d="M0,8 L26,8" id="Line-3"></path>
+                    <polyline id="Line-4" points="20 0 28 8 20 16"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

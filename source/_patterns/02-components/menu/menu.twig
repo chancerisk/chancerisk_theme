@@ -1,0 +1,11 @@
+<nav role="navigation">
+    <ul class="menu {{ modifier_class('menu', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
+        {% for item in items %}
+            <li class="{{ item.attributes.class }}">
+                <a class="{% if (item.in_active_trail) %}active{% endif %}" href="{{ item.url }}">
+                    {{ item.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

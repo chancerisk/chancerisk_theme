@@ -1,0 +1,37 @@
+.menu {
+
+  a {
+    color: $white;
+  }
+
+  &--separator {
+
+    a {
+      color: $white;
+      &:after {
+        content: " | ";
+        padding-left: 10px;
+      }
+    }
+
+    li {
+      &:last-child a:after {
+        content: none;
+      }
+    }
+  }
+
+  &--small-two-columns {
+    column-count: 2;
+    display: block;
+
+    @include breakpoint(large) {
+      display: flex;
+    }
+  }
+
+  .menu-primary__item .nested .is-active {
+    height: 50px;
+    //padding-bottom: 15px;
+  }
+}

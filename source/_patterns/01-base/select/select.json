@@ -1,0 +1,16 @@
+{
+  "options": [
+    {
+      "value": "gender",
+      "label": "gender"
+    },
+    {
+      "value": "female",
+      "label": "female"
+    },
+    {
+      "value": "male",
+      "label": "Male"
+    }
+  ]
+}

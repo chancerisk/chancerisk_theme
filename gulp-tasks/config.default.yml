@@ -1,0 +1,9 @@
+images:
+  enabled: true
+  optimizationLevel: 5
+  verbose: false
+  src:
+    - images/*.{gif}
+  dest: dest/
+
+sourceMapEmbed: false

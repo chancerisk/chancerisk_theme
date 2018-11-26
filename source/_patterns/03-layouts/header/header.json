@@ -1,0 +1,9 @@
+{
+  "attributes": {
+    "Attribute()": {}
+  },
+  "primary_menu": "components-menu-primary",
+  "round_icon": "base-round-icon-large",
+  "schaer_brand": "kanso",
+  "search_flyout": "components-search-flyout"
+}

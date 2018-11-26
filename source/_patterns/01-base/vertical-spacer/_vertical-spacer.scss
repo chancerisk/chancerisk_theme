@@ -1,0 +1,15 @@
+$vertical-x-large: 80;
+$vertical-large: 60;
+$content: $vertical-large;
+$vertical-medium: 40;
+$vertical-small: 25;
+$vertical-x-small: 20;
+@mixin vertical-spacer($small, $large: null, $direction: 'top', $type: 'margin') {
+
+ #{$type}-#{$direction}: rem-calc($small);
+  @if $large != null {
+    @include breakpoint(large) {
+      #{$type}-#{$direction}: rem-calc($large);
+    }
+  }
+}

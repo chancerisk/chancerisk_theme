@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>kanso/icons/social/mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website-V03" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons-kanso-&amp;-flavis" transform="translate(-848.000000, -221.000000)" fill="#373E46" fill-rule="nonzero">
+            <g id="social-mail" transform="translate(848.000000, 221.000000)">
+                <path d="M20,22.3186172 L17.9275,20.6012078 L10.696875,28 L29.119375,28 L22.021875,20.588713 L20,22.3186172 Z M23.05625,19.8034152 L29.9325,26.9498126 C29.971875,26.8111204 30,26.6674302 30,26.5156185 L30,14.1632653 L23.05625,19.8034152 Z M10,14.1345273 L10,26.5156185 C10,26.6674302 10.028125,26.8111204 10.0675,26.9498126 L16.966875,19.8265306 L10,14.1345273 Z M29.375,13 L10.625,13 L20,20.5087464 L29.375,13 Z" id="mail"></path>
+            </g>
+        </g>
+    </g>
+</svg>

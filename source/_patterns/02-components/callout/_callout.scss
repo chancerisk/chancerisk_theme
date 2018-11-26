@@ -1,0 +1,18 @@
+.callout {
+
+  &__text {
+    margin-left: rem-calc(20px);
+    font-style: italic;
+    font-weight: bold;
+    font-size: rem-calc(14px);
+
+    a {
+      color: $primary-color;
+      font-style: normal;
+    }
+  }
+
+  &__newsletter_success {
+    margin: rem-calc(30px) 0 rem-calc(30px) 0;
+  }
+}

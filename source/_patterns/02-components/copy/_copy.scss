@@ -1,0 +1,25 @@
+.copy {
+
+  color: $copy__color;
+
+  @include vertical-spacer($vertical-medium);
+
+  ol, ul {
+    margin-left: rem-calc(20px);
+  }
+
+  ul {
+    margin-bottom: rem-calc(50px);
+  }
+
+  li {
+    margin-bottom: rem-calc(20px);
+  }
+
+  &--small {
+    p {
+      font-size: 14px;
+    }
+  }
+
+}

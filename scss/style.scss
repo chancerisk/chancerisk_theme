@@ -1,0 +1,24 @@
+@import "00-config/_settings-flavis";
+@import "00-config/_settings-global";
+
+@import "fonts";
+@import "../dest/icons/icons.scss";
+@import "00-config/mixins";
+@import "00-config/foundation";
+@include foundation-everything;
+
+@import "01-components/**/*";
+
+@import "../bower_components/sass-burger/burger.scss";
+@import "../source/_patterns/01-base/**/*";
+@import "../source/_patterns/02-components/**/*";
+@import "../source/_patterns/03-layouts/**/*";
+@import "../source/_patterns/04-templates/**/*";
+
+@import "bower_components/slick-carousel/slick/slick.scss";
+@import "bower_components/slick-carousel/slick/slick-theme.scss";
+
+@import "03-drupal/*";
+
+
+

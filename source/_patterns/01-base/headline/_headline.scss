@@ -1,0 +1,27 @@
+h1, .h1 {
+  color: $secondary-color;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  word-break: break-word;
+  &::before {
+    display: block;
+    content: " ";
+    margin-top: -130px; /* Size of fixed header */
+    height: 130px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+.toolbar-horizontal {
+  h1, .h1, h2, .h2, h3, .h3 {
+    &::before {
+      display: block;
+      content: " ";
+      margin-top: -210px; /* Size of fixed header with admin toolbar */
+      height: 210px;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }
+}

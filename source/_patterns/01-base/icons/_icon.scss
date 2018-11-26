@@ -1,0 +1,41 @@
+$icon-palette: $foundation-palette !default;
+
+.icon {
+  vertical-align: middle;
+  stroke: $white;
+  @each $name, $color in $icon-palette {
+    &.icon--#{$name} {
+      stroke: $color;
+    }
+  }
+
+  &--fill-white {
+    fill: $white;
+  }
+
+  &.icon--black {
+    stroke: $black;
+  }
+
+  &--logo-kanso {
+    height: 40px;
+  }
+
+  &--logo-flavis {
+    @include breakpoint(large) {
+      margin-left: -100px;
+    }
+  }
+  &--check-green-dims {
+    stroke: $secondary-color;
+  }
+
+  &--menu {
+    width: 48px;
+    height: 48px;
+  }
+
+  &--no-stroke {
+    stroke: transparent;
+  }
+}

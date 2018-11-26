@@ -1,0 +1,7 @@
+<div class="select">
+<select {{ attributes }}>
+    {% for option in options %}
+        <option value={{ option.value }}{{ option.selected ? ' selected="selected"' }}>{{ option.label }}</option>
+    {% endfor %}
+</select>
+</div>

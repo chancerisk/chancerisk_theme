@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>kanso/icons/social/print</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website-V03" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons-kanso-&amp;-flavis" transform="translate(-848.000000, -171.000000)" fill="#373E46" fill-rule="nonzero">
+            <g id="social-print" transform="translate(848.000000, 171.000000)">
+                <path d="M27,16 L13,16 C11.34,16 10,17.34 10,19 L10,25 L14,25 L14,29 L26,29 L26,25 L30,25 L30,19 C30,17.34 28.66,16 27,16 Z M24,27 L16,27 L16,22 L24,22 L24,27 Z M27,20 C26.45,20 26,19.55 26,19 C26,18.45 26.45,18 27,18 C27.55,18 28,18.45 28,19 C28,19.55 27.55,20 27,20 Z M26,11 L14,11 L14,15 L26,15 L26,11 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

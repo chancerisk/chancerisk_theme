@@ -1,0 +1,48 @@
+$section__title-palette: $foundation-palette !default;
+
+
+.section {
+  @include vertical-spacer($vertical-small);
+
+  &__title {
+    font-size: 22px;
+    font-weight: bold;
+    color: $black;
+    margin-bottom: -17px;
+
+    &--large {
+      font-size: rem-calc(28px);
+      color: $secondary-color;
+      @include vertical-spacer($vertical-x-large);
+    }
+
+    @each $name, $color in $section__title-palette {
+      &--#{$name} .h1, &--#{$name} {
+        color: $color;
+      }
+    }
+  }
+
+  &__text {
+    padding-bottom: 80px;
+  }
+
+  &--large-top {
+    @include vertical-spacer($vertical-large);
+  }
+
+  &__sub-title {
+    padding-bottom: rem-calc(30px);
+  }
+
+  &__button {
+    text-align: center;
+    @include vertical-spacer($vertical-medium);
+  }
+
+  &--padding-right {
+    @include breakpoint(medium) {
+      padding-right: $custom-gutter-padding;
+    }
+  }
+}

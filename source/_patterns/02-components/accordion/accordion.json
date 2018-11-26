@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "Attribute()": {}
+  },
+  "title": "Energy 1137/270kj/kcal",
+  "sub_title": "check all ",
+  "items": {
+    "join()": [
+      {"join()": [
+
+        "<ul class=lined-list>",
+        "components-lined-list-item",
+        "</ul>"
+
+      ]},
+      {"join()": [
+
+        "<ul class=lined-list>",
+        "components-lined-list-item",
+        "</ul>"
+
+      ]}
+    ]
+  }
+}

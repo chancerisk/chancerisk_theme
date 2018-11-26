@@ -1,0 +1,53 @@
+.local-tasks {
+  text-align: right;
+  position: fixed;
+  width: rem-calc(40);
+  padding: rem-calc(10);
+  top: rem-calc(100);
+  right: 0;
+  background: $white;
+  border: 1px solid $dark-gray;
+  border-right: 0;
+  box-shadow: 0 rem-calc(3) rem-calc(3) 0 transparentize($dark-gray, 0.5);
+  z-index: 1000;
+  transition: all 200ms ease-out;
+
+  &:before {
+    content: "⇔";
+    font-size: rem-calc(22);
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: rem-calc(10);
+  }
+
+  &:hover {
+    width: rem-calc(200);
+
+    ul {
+      opacity: 1;
+    }
+  }
+
+  ul {
+    list-style: none inside none;
+    margin-bottom: 0;
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+
+    a {
+      white-space: nowrap;
+    }
+  }
+
+  .contextual {
+    top: rem-calc(-20px);
+  }
+}
+
+.contentinfo {
+  .alert {
+    display: none;
+  }
+}
+

@@ -1,0 +1,23 @@
+$b-label--size--large: 255px;
+
+.b-label {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 rem-calc(5) rem-calc(10) 0;
+  display: inline;
+  justify-content: space-between;
+
+  &--large {
+    line-height: 60px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 0;
+    text-align: center;
+    width: $b-label--size--large;
+  }
+
+}
+
+.b-label span {
+  margin-bottom: 10px;
+}

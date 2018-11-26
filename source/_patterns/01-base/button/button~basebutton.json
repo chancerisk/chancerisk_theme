@@ -1,0 +1,9 @@
+{
+  "attributes": {
+    "Attribute()": {}
+  },
+
+  "text": "Alle Rezepte anzeigen",
+  "color": "secondary",
+  "modifier":"basebutton"
+}

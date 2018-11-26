@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_flags/usa</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ic_flags/usa" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Fill-1" fill="#FFFFFF" points="0 40 40 40 40 0 0 0"></polygon>
+        <polygon id="Fill-2" fill="#2E4593" points="0 23 23 23 23 0 0 0"></polygon>
+        <polygon id="Star" fill="#FFFFFF" points="11.6904914 15.6190848 6.59171095 19.2811529 8.37299693 13.1183587 3.44049135 9.21884705 9.64016704 9.07209888 11.6904914 3 13.7408157 9.07209888 19.9404914 9.21884705 15.0079858 13.1183587 16.7892718 19.2811529"></polygon>
+        <rect id="Rectangle-8" fill="#DD3131" x="23" y="0" width="17" height="6"></rect>
+        <rect id="Rectangle-8" fill="#DD3131" x="23" y="11" width="17" height="6"></rect>
+        <rect id="Rectangle-8" fill="#DD3131" x="0" y="23" width="40" height="6"></rect>
+        <rect id="Rectangle-8" fill="#DD3131" x="0" y="34" width="40" height="6"></rect>
+    </g>
+</svg>

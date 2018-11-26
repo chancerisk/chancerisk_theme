@@ -1,0 +1,50 @@
+foundation:
+  js:
+    bower_components/foundation-sites/dist/js/plugins/foundation.core.min.js: { minified: true }
+    bower_components/foundation-sites/dist/js/plugins/foundation.responsiveMenu.min.js: { minified: true }
+    bower_components/foundation-sites/dist/js/plugins/foundation.util.triggers.min.js: { minified: true }
+    bower_components/foundation-sites/dist/js/plugins/foundation.util.mediaQuery.min.js: { minified: true }
+    bower_components/foundation-sites/dist/js/plugins/foundation.util.nest.min.js: { minified: true }
+    bower_components/foundation-sites/dist/js/plugins/foundation.util.keyboard.min.js: { minified: true }
+
+
+    bower_components/foundation-sites/dist/js/plugins/foundation.toggler.min.js: { minified: true }
+    bower_components/foundation-sites/dist/js/plugins/foundation.accordion.min.js: { minified: true }
+    bower_components/foundation-sites/dist/js/plugins/foundation.accordionMenu.min.js: { minified: true }
+    bower_components/foundation-sites/dist/js/plugins/foundation.drilldown.min.js: { minified: true }
+    js/foundation.js: {}
+  dependencies:
+    - core/jquery
+    - system/drupal.system
+
+
+slick:
+  version: 1.x
+  js:
+    bower_components/slick-carousel/slick/slick.min.js: { minified: true }
+  dependencies:
+    - core/jquery
+    - system/drupal.system
+
+fancybox:
+  css:
+    theme:
+      bower_components/fancybox/dist/jquery.fancybox.min.css: { minified: true }
+  js:
+    bower_components/fancybox/dist/jquery.fancybox.min.js: { minified: true }
+  dependencies:
+    - core/jquery
+
+global-styling:
+  version: 1.x
+  js:
+    bower_components/svgxuse/svgxuse.min.js: { minified: true }
+    js/menu.js: {}
+    js/toc.js: {}
+    js/accordion-mobile.js: {}
+    js/copy-e-mail.js: {}
+  dependencies:
+    - core/jquery
+    - system/drupal.system
+    - schaer_brands/foundation
+    - core/drupal.dialog.ajax

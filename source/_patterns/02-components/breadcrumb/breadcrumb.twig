@@ -1,0 +1,15 @@
+{% if breadcrumb %}
+    <nav class="breadcrumbs__wrapper" role="navigation" aria-labelledby="system-breadcrumb">
+        <ul class="breadcrumbs">
+            {% for item in breadcrumb %}
+                <li>
+                    {% if item.url %}
+                        <a href="{{ item.url }}">{{ item.text }}</a>
+                    {% else %}
+                        <span class="show-for-sr">Current: </span> {{ item.text }}
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+{% endif %}

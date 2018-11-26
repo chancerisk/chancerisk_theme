@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="build/core/tests/bootstrap.php" backupGlobals="true" colors="true" >
+    <php>
+        <ini name="error_reporting" value="32767"/>
+        <ini name="memory_limit" value="-1"/>
+        <env name="SIMPLETEST_BASE_URL" value="http://content-translation-access.docksal"/>
+        <env name="SIMPLETEST_IGNORE_DIRECTORIES" value="build"/>
+        <env name="SIMPLETEST_DB" value="mysql://root:root@db:3306/content_translation_access"/>
+    </php>
+    <testsuites>
+        <testsuite name="unit">
+            <directory>./tests/</directory>
+        </testsuite>
+        <testsuite name="kernel">
+            <directory>./tests/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

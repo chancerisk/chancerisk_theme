@@ -1,0 +1,49 @@
+$round-icon-palette: $group-palette !default;
+
+.round-icon {
+  position: relative;
+  height: rem-calc(80px);
+  width: rem-calc(80px);
+  border-radius: 50%;
+  text-align: center;
+  background-color: $primary-color;
+
+  @each $name, $color in $round-icon-palette {
+    &.round-icon--#{$name} {
+      background-color: $color;
+
+    }
+  }
+
+  &__content .icon--menu {
+    display: $round-icon__menu-display;
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--small {
+    width: $round-icon__menu-width;
+    height: $round-icon__menu-height;
+    margin: 0 $round-icon--small-margin;
+  }
+
+  &--white-transparent {
+    background: rgba(255,255,255,0.3);
+  }
+
+  &--large {
+    background-color: $white;
+    height: rem-calc(230px);
+    width: rem-calc(230px);
+  }
+
+  &--transparent {
+    background-color: transparent;
+  }
+
+}

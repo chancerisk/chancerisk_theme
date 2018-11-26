@@ -1,0 +1,76 @@
+name: Schär brands base theme.
+type: theme
+core: 8.x
+libraries:
+  - schaer_brands/global-styling
+#  - core/drupalSettings
+#  - core/drupal.ajax
+
+regions:
+  primary_menu: Primary nenu
+  language_menu: Language menu
+  search: Search
+  product_search: Product search
+  breadcrumb: breadcrumb
+  content: Content
+  tabs: Tabs
+  footer_first_col: Footer first col
+  footer_second_col: Footer second col
+  footer_third_col: Footer third col
+  newsletter: Newsletter
+  language_select: Language select
+  submenu_button: Submenu button
+
+component-libraries:
+  components:
+    paths:
+      - source/_patterns/02-components
+  layouts:
+    paths:
+      - source/_patterns/03-layouts
+  templates:
+    paths:
+      - source/_patterns/04-templates
+  base:
+    paths:
+      - source/_patterns/01-base
+  macros:
+    paths:
+      - source/_macros
+  drupal_templates:
+    paths:
+      - templates
+
+libraries-override:
+  social_simple/fontawesome:
+    css:
+      base:
+        //maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css: false
+  social_simple/buttons:
+    js:
+      js/social_simple.js: false
+    css:
+      theme:
+        css/social_simple.css: false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

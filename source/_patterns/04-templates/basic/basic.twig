@@ -1,0 +1,16 @@
+{% set toc %}
+    {% include "@components/lined-list/lined-list.twig" only %}
+{% endset %}
+
+<article class="article grid-container full-large-down">
+    <div class="article__container grid-x">
+        <div class="article__content cell small-12">
+            <header class="content-padding">
+                <h1 class="article__title">{{ title }}</h1>
+            </header>
+            <section class="article__content copy content-padding article__basic">
+                {{ content }}
+            </section>
+        </div>
+    </div>
+</article>

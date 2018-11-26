@@ -1,0 +1,12 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": "expanded"
+    }
+  },
+
+  "text": "Abonnieren",
+  "color": "primary",
+  "modifier":"large"
+
+}

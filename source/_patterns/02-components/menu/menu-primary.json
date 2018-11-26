@@ -1,0 +1,84 @@
+{
+  "attributes": {
+    "Attribute()": {}
+  },
+  "modifier": "large",
+  "items": [
+    {
+      "title": "Fettverwert~ungsstörung",
+      "link": "#",
+      "icon": "m-kd",
+      "in_active_trail": true,
+      "below": [
+        {
+          "title": "Info",
+          "link": "#",
+          "in_active_trail": true
+        },
+        {
+          "title": "Wissenswertes",
+          "link": "#"
+        },
+        {
+          "title": "Produkte",
+          "link": "#"
+        },
+        {
+          "title": "Rezepte",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "Oxidations~störungen",
+      "link": "#",
+      "icon": "m-frd",
+      "below": [
+        {
+          "title": "Info",
+          "link": "#"
+        },
+        {
+          "title": "Wissenswertes",
+          "link": "#"
+        },
+        {
+          "title": "Produkte",
+          "link": "#"
+        },
+        {
+          "title": "Rezepte",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "Ketogene^Diät",
+      "link": "#",
+      "icon": "m-od",
+      "below": [
+        {
+          "title": "Info",
+          "link": "#"
+        },
+        {
+          "title": "Wissenswertes",
+          "link": "#"
+        },
+        {
+          "title": "Produkte",
+          "link": "#"
+        },
+        {
+          "title": "Rezepte",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "Produkt^übersicht",
+      "link": "#",
+      "icon": "m-od"
+    }
+  ]
+}

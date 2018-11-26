@@ -1,0 +1,33 @@
+# Compiled files
+
+scss/00-config/_icons.scss
+
+# OS generated files
+.DS_Store
+.DS_Store?
+
+# Dependencies
+node_modules
+
+#### BEGIN REMOVE ANDOCK-CI ###
+bower_components
+dest
+vendor
+#### END REMOVE ANDOCK-CI ###
+
+# Node.js files
+npm-debug.log
+
+# style.css.map file
+style.css.map
+
+# Generated files
+*.sass-cache/
+
+#IDE plugins
+.idea
+atlassian-ide-plugin.xml
+
+source/styleguide/css
+
+

@@ -1,0 +1,46 @@
+$foundation-palette: (
+        primary: #EEA000,
+        secondary: #8F1639,
+        success: #00adb4,
+        warning: #FFD300,
+        alert: #d25124
+);
+$group-palette: (
+        crf: #9a1535,
+        fl: #f07a14,
+        imd: #ffb358,
+);
+
+$tags-palette: (
+        beige: #3D94BD,
+);
+$light-gray: #efefef;
+$medium-gray: #b4b4b4;
+$dark-gray: #373E46;
+
+$default-border-color: $light-gray;
+
+$black: #000000;
+$white: #FFFFFF;
+$body-color: #F5F5F5;
+$copy__color: $dark-gray;
+
+$custom-gutter-padding: 24px;
+$logo-filler: $white;
+$logo-width: 120px;
+$logo-left: 47%;
+$newsletter-background: #E1C8CF;
+$round-icon__menu-display: block;
+$round-icon__menu-width: 50px;
+$round-icon__menu-height: 50px;
+$round-icon--small-margin: 10px;
+$header__logo__container-width: 220px;
+
+$header__menu__background--active: #BB7388;
+$header__sub-menu__background: #A54460;
+$header__sub-menu__background--active: #C07C90;
+$header__sub-menu__border: #F2E4E8;
+
+$menu-primary__large-logo-width: 220px;
+$menu-container__spacer-margin-left: 365px;
+$stage-circle__icon-width: 505px;

@@ -1,0 +1,8 @@
+<div class="round-icon {{ modifier_class('round-icon', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
+    <div class="round-icon__content">
+    {% block icon %}
+    {{ icon }}
+    {% endblock icon %}
+    </div>
+</div>
+

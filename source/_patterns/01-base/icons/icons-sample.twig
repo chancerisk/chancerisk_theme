@@ -1,0 +1,12 @@
+<div class="icons-demo" id="icons">
+
+    {% for icon in sample_icons%}
+        {% for color in sample_colors %}
+            <div>
+                <h4>{{ icon }} ({{ color }})</h4>
+
+            {% include "@base/icons/icon.twig" with {"icon": icon, "modifier": color} %}
+            </div>
+        {% endfor %}
+    {% endfor %}
+</div>

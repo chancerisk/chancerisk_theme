@@ -1,0 +1,21 @@
+.grid {
+  &-container.full-large-down {
+    @include breakpoint(medium down) {
+      padding-right: 0;
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+  &-container--inner-padding.grid-container {
+    padding-left: 0;
+    padding-right: 0;
+    & > .grid-x > .cell {
+      @each $breakpoint, $padding in $grid-container-padding {
+        @include breakpoint($breakpoint) {
+          padding-left: $padding;
+          padding-right: $padding;
+        }
+      }
+    }
+  }
+}

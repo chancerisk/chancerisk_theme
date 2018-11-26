@@ -1,0 +1,40 @@
+$corner-icon-palette: $group-palette !default;
+
+.corner-icon {
+  position: relative;
+  height: 40px;
+  width: 50px;
+  background-color: $warning-color;
+  overflow: hidden;
+
+  @each $name, $color in $corner-icon-palette {
+    &.corner-icon--#{$name} {
+      background-color: $color;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: $logo-left;
+    transform: translate(-50%, -50%);
+  }
+
+  &--rectangle {
+    position: relative;
+    border-radius: 5px;
+    background-color: $light-gray;
+    text-align: right;
+    display: flex;
+    margin-right: $global-margin;
+
+  }
+
+  &--rectangle:last-child {
+    margin-right: 0;
+
+    @include breakpoint(small only) {
+      margin-right: rem-calc(0);
+    }
+  }
+}

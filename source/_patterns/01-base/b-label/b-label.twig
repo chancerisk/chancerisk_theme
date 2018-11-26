@@ -1,0 +1,7 @@
+{% set tag_name = link_url != '' ? 'a' : 'div' %}
+<{{ tag_name }} class="b-label" {%  if link_url != '' %} href="{{ link_url }}" {% endif%}">
+  <span {% if tag_color %}style="background-color: {{ tag_color }}"{% endif %}
+        class="label {{ class }} {{ modifier_class('b-label', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
+    {{ text }}
+  </span>
+</{{ tag_name }}>
